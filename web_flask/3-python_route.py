@@ -21,7 +21,7 @@ def display2(text):
     """creates static routing"""
     return f'C {text}'
 
-@app.route("/python/<text>",defaults={'text' : 'is cool'}, strict_slashes=False)
+@app.route("/python/<text>", defaults={'text' : 'is cool'}, strict_slashes=False)
 def display3(text):
     """creates static routing"""
     text = text.replace("_", " ")
