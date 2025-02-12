@@ -15,5 +15,9 @@ def display1():
     """creates static routing"""
     return "HBNB"
 
+@app.route("/c/<text>", strict_slashes=False)
+def display2(text):
+    return f'C {text}'
+
 if __name__ == "__main__":
     app.run(debug=True)
