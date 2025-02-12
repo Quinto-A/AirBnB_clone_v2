@@ -17,9 +17,15 @@ def display1():
 
 @app.route("/c/<text>", strict_slashes=False)
 def display2(text):
-    """Creates static routing"""
     text = text.replace("_", " ")
+    """creates static routing"""
     return f'C {text}'
+
+@app.route("/python/<text>",defaults={'text' : 'is cool'}, strict_slashes=False)
+def display3(text):
+    """creates static routing"""
+    text = text.replace("_", " ")
+    return f'Python {text}'
 
 if __name__ == "__main__":
     app.run(debug=True)
