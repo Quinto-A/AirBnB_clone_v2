@@ -10,7 +10,7 @@ def display():
     """Creates dynamic routing"""
     return "Hello HBNB!"
 
-@app.route("/HBNB", strict_slashes=False)
+@app.route("/hbnb", strict_slashes=False)
 def display1():
     """creates static routing"""
     return "HBNB"
