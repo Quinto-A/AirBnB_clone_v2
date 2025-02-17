@@ -38,5 +38,6 @@ def display4(n):
     """displays only if n is an integer"""
     return f'{n} is a number'
 
+
 if __name__ == "__main__":
     app.run(debug=True)
